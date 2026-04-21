@@ -29,7 +29,7 @@ print(f"Number of duplicate rows found: {len(duplicate_rows)}")
 # Display the duplicate rows
 if not duplicate_rows.empty:
     print("\nDuplicate Rows (first 5 shown if many):")
-    display(duplicate_rows.head())
+    print(duplicate_rows.head())
 else:
     print("No duplicate rows found in the DataFrame.")
 
