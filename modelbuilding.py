@@ -80,10 +80,10 @@ X = df_encoded.drop('Salary', axis=1)
 y = df_encoded['Salary']
 
 print("Independent variables (X):")
-display(X.head())
+print(X.head())
 
 print("\nDependent variable (y):")
-display(y.head())
+print(y.head())
 
 """### Handling Missing Values
 
@@ -92,7 +92,7 @@ Now, let's address the missing values in our `df_encoded` DataFrame. We will imp
 
 # Check for null values in df_encoded
 print("Null values before imputation:")
-display(df_encoded.isnull().sum())
+print(df_encoded.isnull().sum())
 
 # Impute numerical columns with the mean
 for col in ['Age', 'Years of Experience', 'Salary']:
@@ -107,10 +107,10 @@ for col in ['Gender', 'Education Level', 'Job Title']:
         print(f"Imputed '{col}' with mode.")
 
 print("\nNull values after imputation:")
-display(df_encoded.isnull().sum())
+print(df_encoded.isnull().sum())
 
 print("\nDataFrame after imputation (first 5 rows):")
-display(df_encoded.head())
+print(df_encoded.head())
 
 """### Model Training and Evaluation
 
@@ -273,7 +273,7 @@ model_performance = pd.DataFrame({
 
 # Display the performance table
 print("Model Performance Summary:")
-display(model_performance.sort_values(by='R-squared', ascending=False))
+print(model_performance.sort_values(by='R-squared', ascending=False))
 
 # Plotting MAE
 plt.figure(figsize=(12, 6))
