@@ -68,7 +68,7 @@ for col in categorical_cols:
     print(f"LabelEncoder fitted for column: {col}")
 
 print("\nDataFrame after Label Encoding:")
-display(df_encoded.head())
+print(df_encoded.head())
 
 """### Separating Dependent and Independent Variables
 
