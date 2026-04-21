@@ -9,11 +9,6 @@ Original file is located at
 
 import pandas as pd
 
-%%writefile requirements.txt
-pandas
-scikit-learn
-matplotlib
-seaborn
 
 df = pd.read_csv("Salary_Data.csv")
 
